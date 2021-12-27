@@ -27,6 +27,10 @@ int main() {
     cin >> points2.x;
     cout << "Enter the second y value\n";
     cin >> points2.y;
-    cout << slopeCalcuator(points1.x, points1.y, points2.x, points2.y);
+    if (points1.x != points2.x) {
+    cout << "Slope = " << slopeCalcuator(points1.x, points1.y, points2.x, points2.y);
+    }
+    else {
+        cout << "Undefined slope or same points\n";
+    }
 }
-
